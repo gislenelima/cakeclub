@@ -1,0 +1,87 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f3f3f3;
+	
+}
+h1{
+	color: #800080;
+
+}
+
+h2{
+	color: #800080;
+	
+}
+p {
+	padding-bottom: 20px;
+	padding-left: 40px;
+
+}
+
+
+p.imagem {
+	background-image: url(/cakeclub/cakepage/imagem/imagem2.jpg); /* Insere a imagem */
+	background-position: top left;
+	padding-left: 10px;
+	}
+
+#texto{
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+
+#navegacao {
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+#area {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+#logo {
+    float: left;
+    padding: 7px 0;
+   
+}
+
+#menu {
+	float: right;
+	padding: 20px;
+	color: #800080
+}
+
+/***************Formatação do menu************/
+a {
+	text-decoration: none;
+	padding: 5px 10px;
+	color:#800080
+}
+
+#btn{
+	position:absolute;
+	top:75px;
+	right: 45px;
+}
+
+#ajuste{
+	margin-top: 80px;
+	margin-left: 45px;
+	margin-right: 45px;
+
+	
+}
+ 
+

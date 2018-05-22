@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+	<head>
+		<title>Coke Club</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+  		<link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
+		
+	</head>
+
+	<body>
+
+		<div id="navegacao">
+			<div id="area">
+				<div id="menu">
+                   			<a href="{%url 'datas' %}">Datas</a>
+							<a href="{%url 'dicas' %}">Dicas</a>
+							<a href="{%url 'regras' %}">Regras</a>
+							<a href="{%url 'resultados' %}">Resultados</a>
+                </div>
+            </div>
+								
+		</div>
+
+		<div>
+			<h2>Regras</h2>
+				
+					<div class="alert alert-secondary" role="alert">
+							Cada dupla fica responsável por três bolos;
+						</div>
+					<div class="alert alert-secondary" role="alert">
+							Reunioes sempre as sextas-feiras;
+					</div>
+					<div class="alert alert-secondary" role="alert">
+							Dúvidas, sempre procurar a administradora;
+					</div>
+					<div class="alert alert-secondary" role="alert">
+							Participar das votações no site;
+					</div>
+					<div class="alert alert-secondary" role="alert">
+							Caso falte no dia, tem que pagar o amiguinho que cobriu sua vez;
+					</div>
+					
+		</div>
+
+	</body>
+
+</html>
+</html>

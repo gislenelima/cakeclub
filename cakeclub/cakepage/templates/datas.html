@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+	<head>
+		<title>Coke Club</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+  		<link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />	
+	</head>
+
+	<body>
+
+		<div id="navegacao">
+			<div id="area">
+				<div id="menu">
+                            <a href="{%url 'home' %}">Início</a>
+							<a href="{%url 'dicas' %}">Dicas</a>
+							<a href="{%url 'regras' %}">Regras</a>
+							<a href="{%url 'resultados' %}">Resultados</a>
+					
+                </div>
+            </div>
+            
+			
+		</div>
+
+
+		<h2>Listagem das duplas</h2>
+			<table class="table">
+				<thead class="thead-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Amiguinho 1</th>
+					<th scope="col">Amiguinho 2</th>
+					<th scope="col">Data</th>
+				</tr>
+				</thead>
+				{% for posts in posts%}	
+				<tbody>
+				<tr>
+					<th scope="row">{{posts.id}}</th>
+					<td>{{posts.nome_um}}</td>
+					<td>{{posts.nome_dois}}</td>
+					<td>{{posts.date_da_dupla}}</td>
+				</tr>
+				</tbody>
+				{% endfor %}
+			</table>
+				
+	</body>
+
+</html>
+</html>

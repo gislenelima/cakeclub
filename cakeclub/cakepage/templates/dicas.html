@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+  <!-- meta tags obrigatorias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Cake Club</title>
+  
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
+</head>
+	<body>
+
+			<div id="navegacao">
+					<div id="area">                  
+						<div id="menu">
+							<a href="{%url 'home' %}">Início</a>
+							<a href="{%url 'datas' %}">Datas</a>
+							<a href="{%url 'regras' %}">Regras</a>
+							<a href="{%url 'resultados' %}">Resultados</a>
+							
+						
+						
+						</div>
+					</div>
+					
+					
+			</div>
+			<a id = "btn" href="{%url 'novadica' %}"class="btn btn-warning btn-lg" role="button" aria-pressed="true">Nova Dica :) </a>
+			
+			<div id = "ajuste">
+				{% for listar in listar %}
+
+					<div class="alert alert-secondary" role="alert">
+					<h4 class="alert-heading">{{listar.titulo}}</h4>
+					<p>{{listar.texto}}</p>
+					</div>
+
+					
+				{% endfor %}
+			</div>
+		
+	</body>
+
+</html>
+</html>

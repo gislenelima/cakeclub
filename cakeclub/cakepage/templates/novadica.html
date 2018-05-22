@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+  <!-- meta tags obrigatorias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Cake Club</title>
+  
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
+</head>
+	<body>
+			<div id="navegacao">
+          <div id="area">                  
+            <div id="menu">
+                <a href="{%url 'datas' %}">Datas</a>
+                <a href="{%url 'dicas' %}">Dicas</a>
+                <a href="{%url 'regras' %}">Regras</a>
+                <a href="{%url 'resultados' %}">Resultados</a>
+            
+            </div>
+          </div>
+      </div>
+
+    <form method = "POST">
+    {% csrf_token %}
+        <p></p>        
+        <p>Titulo: {{form.titulo}} </p>      
+        <p>Texto: {{form.texto}}</p>
+         <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+	
+
+
+  </body>
+
+</html>
+</html>
