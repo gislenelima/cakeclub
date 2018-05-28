@@ -24,13 +24,18 @@
             </div>
           </div>
       </div>
+    <h2>Escreva sua dica!</h2>
+
+
 
     <form method = "POST">
     {% csrf_token %}
-        <p></p>        
-        <p>Titulo: {{form.titulo}} </p>      
-        <p>Texto: {{form.texto}}</p>
-         <button type="submit" class="btn btn-primary">Submit</button>
+
+          <p> Título</p>
+          <p>{{form.titulo}} </p>      
+          <p>Texto:</p>
+          <p>{{form.texto}}</p>
+          <button id = "txt" type="submit" class="btn btn-primary">Submit</button>
         
     </form>
 	

@@ -4,7 +4,7 @@
 <html>
 
 	<head>
-		<title>Coke Club</title>
+		<title>Cake Club</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href={%static 'css/estilo.css'%} />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
@@ -32,19 +32,19 @@
 			<table class="table">
 				<thead class="thead-dark">
 				<tr>
-					<th scope="col">#</th>
-					<th scope="col">Amiguinho 1</th>
-					<th scope="col">Amiguinho 2</th>
 					<th scope="col">Data</th>
+					<th scope="col">Amiguinho (1)</th>
+					<th scope="col">Amiguinho (2)</th>
+					
 				</tr>
 				</thead>
 				{% for posts in posts%}	
 				<tbody>
 				<tr>
-					<th scope="row">{{posts.id}}</th>
+					<td>{{posts.date_da_dupla}}</td>
 					<td>{{posts.nome_um}}</td>
 					<td>{{posts.nome_dois}}</td>
-					<td>{{posts.date_da_dupla}}</td>
+					
 				</tr>
 				</tbody>
 				{% endfor %}

@@ -1,7 +1,7 @@
 from django.db import models
 import datetime
 from django.utils import timezone
-
+from multiselectfield import MultiSelectField
 
 # Create your models here.
 
@@ -39,6 +39,7 @@ class CakePool(models.Model):
 
         verbose_name = 'Pool'
         verbose_name_plural = 'Pools'
+        
 
     def __str__(self):
         return '%s %s' % (self.entry_date, self.cake.all()) #cake.all para regularização dos nomes dentro das escolhas
